@@ -167,18 +167,14 @@ def criar_usuario(usuarios):
         print("Usuario já cadastrado.")
         return None
 
-    #nome = input("Digite o nome: ")
-    #data_nascimento = input("Digite a data de nascimento [dd-mm-yyyy]: ")
-    #logradouro = input("Digite o logradouro: ")
-    #numero_do_logradouro = input("Digite o numero do logradouro: ")
-    #bairro = input("Digite o bairro: ")
-    #cidade = input("Digite a cidade: ")
-    #estado = input("Digite a sigla do estado: ")
-    #endereco = f"{logradouro}, {numero_do_logradouro} - {bairro} - {cidade}/{estado}"
-
-    nome = "dan"
-    data_nascimento = "01-01-2023"
-    endereco = "rua tal, 8 - Barro - City/ES"
+    nome = input("Digite o nome: ")
+    data_nascimento = input("Digite a data de nascimento [dd-mm-yyyy]: ")
+    logradouro = input("Digite o logradouro: ")
+    numero_do_logradouro = input("Digite o numero do logradouro: ")
+    bairro = input("Digite o bairro: ")
+    cidade = input("Digite a cidade: ")
+    estado = input("Digite a sigla do estado: ")
+    endereco = f"{logradouro}, {numero_do_logradouro} - {bairro} - {cidade}/{estado}"
 
     usuario = PessoaFisica(cpf=cpf,
                            nome=nome,
